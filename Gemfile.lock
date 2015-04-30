@@ -32,6 +32,7 @@ GEM
     ansi (1.4.3)
     arel (3.0.3)
     attr_required (1.0.0)
+    awesome_print (1.6.1)
     bindata (2.1.0)
     builder (3.0.4)
     erubis (2.7.0)
@@ -72,6 +73,7 @@ GEM
     polyamorous (1.1.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
+    power_assert (0.2.2)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -123,6 +125,8 @@ GEM
       httpclient (>= 2.4)
       i18n
       json (>= 1.4.3)
+    test-unit (3.0.8)
+      power_assert
     thor (0.19.1)
     tilt (1.4.1)
     treetop (1.4.15)
@@ -148,6 +152,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   html5_validators
   jquery-rails
   openid_connect
@@ -157,4 +162,5 @@ DEPENDENCIES
   rest-client
   sqlite3
   squeel
+  test-unit
   turn

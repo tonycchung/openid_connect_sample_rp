@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'awesome_print'
 gem 'rails', '~>3.2'
 gem 'jquery-rails'
 gem 'openid_connect'
@@ -12,6 +13,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'test-unit'
   gem 'turn', :require => false
 end
 
