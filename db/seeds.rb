@@ -32,16 +32,16 @@ Provider.create! [{
   identifier:             'c010d4b54ea9f5636329895f6764a146',
   secret:                 '951559836317853413dc614e24ab5beee33b26b5b92889c8f1c43bedfc198c05',
   scopes_supported:       [:openid, :profile, :email],
-  authorization_endpoint: 'http://localhost:3000/authorizations/new',
-  token_endpoint:         'http://localhost:3000/access_tokens',
-  userinfo_endpoint:      'http://localhost:3000/user_info'
+  authorization_endpoint: 'http://openid-connect-sample.dev/authorizations/new',
+  token_endpoint:         'http://openid-connect-sample.dev/access_tokens',
+  userinfo_endpoint:      'http://openid-connect-sample.dev/user_info'
 }, {
   name:                   'connect_op',
   issuer:                 'https://connect-op.com',
-  identifier:             '853744694b95d01dc1822809944c7941',
-  secret:                 '464f04bf9a17a0bee73ee9b16703d6b092969a537326f40bf8824d24e20aa04a',
-  scopes_supported:       [:openid, :profile, :email],
-  authorization_endpoint: 'http://localhost:3000/authorizations/new',
-  token_endpoint:         'http://localhost:3000/access_tokens',
-  userinfo_endpoint:      'http://localhost:3000/user_info'
+  identifier:             'ef69fbbdf270deb8b4077a2790221868',
+  secret:                 '585624b080dcf750cb8dda2d358f20ff7de820591c9d66a061b923a9585599a0',
+  scopes_supported:       [:openid],
+  authorization_endpoint: 'http://openid-connect-sample.dev/authorizations/new',
+  token_endpoint:         'http://openid-connect-sample.dev/access_tokens',
+  userinfo_endpoint:      'http://openid-connect-sample.dev/user_info'
 }]
