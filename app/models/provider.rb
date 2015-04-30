@@ -106,7 +106,12 @@ class Provider < ActiveRecord::Base
   end
 
   def decode_id(id_token)
-    OpenIDConnect::ResponseObject::IdToken.decode id_token, config.public_keys.first
+    begin
+      OpenIDConnect::ResponseObject::IdToken.decode id_token, config.public_keys.last
+    rescue JSON::JWS::VerificationFailed => e
+      puts e.message
+      OpenIDConnect::ResponseObject::IdToken.decode id_token, config.public_keys.first
+    end
   end
 
   def authenticate(redirect_uri, code, nonce)
